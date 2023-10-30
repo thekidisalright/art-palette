@@ -1,0 +1,55 @@
+::-moz-selection {
+    background: var(--preto);
+    color: var(--branco);
+}
+::selection {
+    background: var(--preto);
+    color: var(--branco);
+}
+
+body{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.navbar{
+    background-color: var(--preto);
+}
+
+.navbar-brand{
+    color: var(--roxo);
+    background-color: var(--branco);
+}
+
+.navbar-brand:hover{
+    color: var(--preto);
+}
+
+.nav-link, .nav-link:active, .nav-link:focus{
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+.nav-link:hover, .dropdown .show{
+    color: var(--roxo) !important;
+}
+
+.nav-item .active{
+    color: var(--branco) !important;
+    font-weight: 700;
+}
+
+.dropdown-menu{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.paleta{
+    border: 1px solid var(--preto);
+    border-radius: 25px;
+}
+
+.section-paletas{
+    border: 1px solid var(--preto);
+    border-radius: 25px;
+}

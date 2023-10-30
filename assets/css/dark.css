@@ -1,0 +1,64 @@
+:-moz-selection {
+    background: var(--branco);
+    color: var(--preto);
+}
+::selection {
+    background: var(--branco);
+    color: var(--preto);
+}
+
+body{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.navbar{
+    background-color: var(--branco);
+}
+
+.navbar-brand{
+    color: var(--branco);
+    background-color: var(--preto);
+}
+
+.navbar-brand:hover{
+    color: var(--branco);
+}
+
+.nav-link, .nav-link:active, .nav-link:focus{
+    font-size: 1rem;
+    color: var(--preto);
+}
+
+.nav-link:hover, .dropdown .show{
+    color: var(--roxo) !important;
+}
+
+.nav-item .active{
+    color: var(--roxo) !important;
+    font-weight: 700;
+}
+
+.dropdown-menu{
+    background-color: var(--preto) !important;
+    border: 1px solid var(--branco) !important;
+}
+
+.dropdown-menu li a{
+    color: var(--branco) !important;
+}
+
+.dropdown-menu hr{
+    border-top: 1px solid var(--branco) !important;
+    border-bottom: 1px solid var(--preto) !important;
+}
+
+.paleta{
+    border: 1px solid var(--branco);
+    border-radius: 25px;
+}
+
+.section-paletas{
+    border: 1px solid var(--branco);
+    border-radius: 25px;
+}
