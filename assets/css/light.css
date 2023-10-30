@@ -39,17 +39,20 @@ body{
     font-weight: 700;
 }
 
-.dropdown-menu{
-    background-color: var(--branco);
-    color: var(--preto);
+#hamburger{
+    color: var(--branco);
 }
 
 .paleta{
-    border: 1px solid var(--preto);
+    border: 2px solid var(--preto);
     border-radius: 25px;
 }
 
 .section-paletas{
-    border: 1px solid var(--preto);
+    border: 2px solid var(--preto);
     border-radius: 25px;
+}
+
+.cor{
+    border-color: var(--preto);
 }

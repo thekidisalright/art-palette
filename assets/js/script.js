@@ -1,9 +1,26 @@
 function expandirCor(element){
     const cores = document.querySelectorAll('.cor');
     cores.forEach(cor => {
-        cor.classList.remove('expanded');
+        if (cor.classList.contains('expandido') && cor !== element) {
+            cor.classList.remove('expandido');
+        } else if (cor === element) {
+            cor.classList.toggle('expandido');
+        }
     });
-    element.classList.toggle('expanded');
+}
+
+function copiarHex(element){
+    const cor = element.innerHTML;
+    navigator.clipboard.writeText(cor).then(() => {
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert alert-success alert-dismissible fade show position-fixed bottom-0 end-0 m-3';
+        alertDiv.role = 'alert';
+        alertDiv.innerHTML = 'Copiado para a área de transferência!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+        document.body.appendChild(alertDiv);
+        setTimeout(() => {
+            alertDiv.remove();
+        }, 3000);
+    });
 }
 
 document.addEventListener("mousemove", (e) => {
@@ -35,3 +52,4 @@ function toggleCursor() {
 toggleCursor();
 
 window.addEventListener("resize", toggleCursor);
+

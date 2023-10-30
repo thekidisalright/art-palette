@@ -40,14 +40,26 @@
     padding: 0.5rem 1rem;
 }
 
+.paleta{
+    width: fit-content;
+}
+
 .cores{
     display: flex;
+    padding: 15px calc(30px - 7.5px);
 }
 
 .cor{
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
 }
 
 .expandido{
@@ -58,6 +70,13 @@
 
 .cor:hover{
     cursor: pointer;
+}
+
+.hex {
+    display: none;
+}
+.cor.expandido .hex {
+    display: block;
 }
 
 @media (max-width: 575.98px) {

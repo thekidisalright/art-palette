@@ -39,7 +39,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span style="color: var(--branco)">
+                        <span id="hamburger">
                             <i class="fa-solid fa-bars"></i>
                         </span>
                     </button>
@@ -62,25 +62,26 @@
 
         <div class="row mb-4">
             <div class="col">
-                <h1>Bem-vindo, Alexandre 👋</h1>
+                <h1>Bem-vindo ao ArtPalette</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="row mt-1 p-3 section-paletas justify-content-md-between justify-content-center">
-                <div class="paleta col-auto" id="myCard">
+            <div class="col-12 mt-1 p-3 section-paletas d-flex justify-content-md-between justify-content-center">
+                <div class="paleta" id="myCard">
                     <div class="cores">
-                        <div class="cor bg-primary" onclick="expandirCor(this)"></div>
+                        <div class="cor bg-primary" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                        <div class="cor bg-secondary" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                        <div class="cor bg-success" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
                     </div>
                     <div class="paleta-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+
 
     <div class="custom-cursor">
         <img src="assets/images/brush.svg" id="cursor" alt="Cursor personalizado">

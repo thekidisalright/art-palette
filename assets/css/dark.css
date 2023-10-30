@@ -39,26 +39,20 @@ body{
     font-weight: 700;
 }
 
-.dropdown-menu{
-    background-color: var(--preto) !important;
-    border: 1px solid var(--branco) !important;
-}
-
-.dropdown-menu li a{
-    color: var(--branco) !important;
-}
-
-.dropdown-menu hr{
-    border-top: 1px solid var(--branco) !important;
-    border-bottom: 1px solid var(--preto) !important;
+#hamburger{
+    color: var(--preto);
 }
 
 .paleta{
-    border: 1px solid var(--branco);
+    border: 2px solid var(--branco);
     border-radius: 25px;
 }
 
 .section-paletas{
-    border: 1px solid var(--branco);
+    border: 2px solid var(--branco);
     border-radius: 25px;
+}
+
+.cor{
+    border-color: var(--branco);
 }
