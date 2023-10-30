@@ -1,14 +1,3 @@
-<?php
-$theme = $_COOKIE['theme'] ?? 'light';
-if (
-    $theme === '
-    dark'
-) {
-    $iconeTema = '<i class="fa-solid fa-sun"></i>';
-} else {
-    $iconeTema = '<i class="fa-solid fa-moon"></i>';
-}
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -38,7 +27,7 @@ if (
 
 </head>
 
-<body class="<?php echo $theme; ?>">
+<body>
     <div class="container">
         <div class="row navbar-pai">
             <nav class="navbar navbar-expand-lg">
@@ -62,24 +51,8 @@ if (
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Paletas</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Meu Perfil
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Minhas paletas</a></li>
-                                    <li><a class="dropdown-item" href="#">Curtidas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                            </li>
                             <li class="nav-item">
-                                <?php
-                                echo "<button class='btn btn-link nav-link' id='themeButton'> $iconeTema </button>";
-                                ?>
+                                <button class="btn btn-link nav-link" id="themeButton"></button>
                             </li>
                         </ul>
                     </div>
