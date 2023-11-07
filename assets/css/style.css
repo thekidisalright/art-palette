@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--quicksand);
-    cursor: none !important;
 }
 
 :root {
@@ -16,16 +15,6 @@
     --quicksand: 'Quicksand', sans-serif;
 }
 
-.custom-cursor {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-.custom-cursor img {
-    width: 20px;
-    height: 20px;
-}
 
 .navbar-pai{
     padding: 1.5rem 0 2.5rem 0;
@@ -110,4 +99,13 @@
 
 .celular, .desktop{
     transition: all 0.3s ease-in-out;
+}
+
+.btn-modal{
+    display: flex;
+    align-items: center;
+}
+
+.modalCelular{
+    max-width: 412px;
 }

@@ -199,7 +199,18 @@
 
     <div class="modal fade" id="modalCelular" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalCelular">
+            <div class="row justify-content-end">
+                <div class="col-auto d-flex align-items-center">
+                    <button type="button" class="btn btn-modal">Menu <span class="material-symbols-outlined">
+                        expand_more
+                        </span></button>
+                    <button type="button" class="btn btn-modal"><span class="material-symbols-outlined">
+                        light_mode
+                        </span></button>
+
+                </div>
+            </div>
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -208,8 +219,7 @@
               ...
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
+              <button type="button" class="btn btn-primary">Entendido</button>
             </div>
           </div>
         </div>
@@ -227,16 +237,12 @@
               ...
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
+              <button type="button" class="btn btn-primary">Entendido</button>
             </div>
           </div>
         </div>
     </div>
 
-    <div class="custom-cursor">
-        <img src="assets/images/brush.svg" id="cursor" alt="Cursor personalizado">
-    </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/script.js"></script>
