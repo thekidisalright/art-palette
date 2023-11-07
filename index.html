@@ -22,8 +22,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
 </head>
 
@@ -49,7 +49,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Paletas</a>
+                                <a class="nav-link" href="#">Quem somos</a>
                             </li>
                             <li class="nav-item">
                                 <button class="btn btn-link nav-link" id="themeButton"></button>
@@ -66,15 +66,130 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 mt-1 p-3 section-paletas d-flex justify-content-md-between justify-content-center">
-                <div class="paleta" id="myCard">
-                    <div class="cores">
-                        <div class="cor bg-primary" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
-                        <div class="cor bg-secondary" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
-                        <div class="cor bg-success" onclick="expandirCor(this)"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+        <div class="row justify-content-md-evenly justify-content-center">
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #006DFF;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F5F5F7;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #00BAFF;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">H2O</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
                     </div>
-                    <div class="paleta-body">
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #C72AE3;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F5F5F7;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #80F34F;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">Açaí</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #9AF603;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #1b1b1f;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #65C6A0;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">Verde do Violinista</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #25B5E5;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F5F5F7;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #EA328C;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">Transformar</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F3F955;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #1B1B1F;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #2BE310;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">Vagalume</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #E32934;"><span class="hex" onclick="copiarHex(this)">#FFFFFF</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F5F5F7;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #004883;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">Fraternité</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto paleta" id="myCard">
+                <div class="cores">
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #0038A8;"><span class="hex" onclick="copiarHex(this)">#0038A8</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #F5F5F7;"><span class="hex" onclick="copiarHex(this)">#000000</span></div>
+                    <div class="cor" onclick="expandirCor(this)" style="background-color: #D60270;"><span class="hex" onclick="copiarHex(this)">#ff00ff</span></div>
+                </div>
+                <div class="paleta-body px-3 d-flex align-items-center justify-content-between pb-1">
+                    <span class="fw-bold">I'm bi, actually</span>
+                    <div>
+                    <span class="material-symbols-outlined me-1 celular">
+                        phone_iphone
+                        </span>
+                        <span class="material-symbols-outlined desktop">
+                            computer
+                            </span>
                     </div>
                 </div>
             </div>

@@ -49,6 +49,22 @@ function toggleCursor() {
     }
 }
 
+// Select all phone and desktop buttons
+const buttons = document.querySelectorAll('.celular, .desktop');
+
+// Iterate over each button
+buttons.forEach(button => {
+  // Add click event listener
+  button.addEventListener('click', function() {
+    // Get the color of the palette associated with the clicked button
+    const palette = this.closest('.paleta');
+    const color = getComputedStyle(palette.querySelector('.cor')).backgroundColor;
+
+    // Change the color of the page
+    document.body.style.backgroundColor = color;
+  });
+});
+
 toggleCursor();
 
 window.addEventListener("resize", toggleCursor);

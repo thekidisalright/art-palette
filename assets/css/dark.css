@@ -8,17 +8,17 @@
 }
 
 body{
-    background-color: var(--preto);
-    color: var(--branco);
+    background-color: var(--cinza);
+    color: var(--cinza-claro);
 }
 
 .navbar{
-    background-color: var(--branco);
+    background-color: var(--cinza-claro);
 }
 
 .navbar-brand{
-    color: var(--branco);
-    background-color: var(--preto);
+    color: var(--cinza-claro);
+    background-color: var(--cinza);
 }
 
 .navbar-brand:hover{
@@ -44,15 +44,10 @@ body{
 }
 
 .paleta{
-    border: 2px solid var(--branco);
-    border-radius: 25px;
-}
-
-.section-paletas{
-    border: 2px solid var(--branco);
+    border: 2px solid var(--cinza-claro);
     border-radius: 25px;
 }
 
 .cor{
-    border-color: var(--branco);
+    border-color: var(--cinza-escuro) !important;
 }
