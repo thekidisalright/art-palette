@@ -1,3 +1,5 @@
+const root = document.documentElement
+
 function expandirCor(element){
     const cores = document.querySelectorAll('.cor');
     cores.forEach(cor => {
@@ -52,18 +54,57 @@ function toggleCursor() {
 // Select all phone and desktop buttons
 const buttons = document.querySelectorAll('.celular, .desktop');
 
-// Iterate over each button
-buttons.forEach(button => {
-  // Add click event listener
-  button.addEventListener('click', function() {
-    // Get the color of the palette associated with the clicked button
-    const palette = this.closest('.paleta');
-    const color = getComputedStyle(palette.querySelector('.cor')).backgroundColor;
+// Select all 'celular' buttons
+const celulares = document.querySelectorAll('.celular');
 
-    // Change the color of the page
-    document.body.style.backgroundColor = color;
+// Iterate over each 'celular' button
+celulares.forEach(celular => {
+  // Add click event listener
+  celular.addEventListener('click', function() {
+    // Get the colors of the palette associated with the clicked button
+    const palette = this.closest('.paleta');
+    const colors = Array.from(palette.querySelectorAll('.cor')).map(cor => getComputedStyle(cor).backgroundColor);
+
+    // Set the colors in CSS variables
+    colors.forEach((color, index) => {
+      document.documentElement.style.setProperty(`--color-${index + 1}`, color);
+    });
+
+    // Set the modal background to the colors
+    const modal = document.querySelector('#modalCelular .modal-content');
+    modal.style.background = `linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3))`;
   });
+
+  celular.setAttribute('data-bs-toggle', 'modal');
+  celular.setAttribute('data-bs-target', '#modalCelular');
 });
+
+const desktops = document.querySelectorAll('.desktop');
+
+// Iterate over each 'desktop' button
+desktops.forEach(desktop => {
+  // Add click event listener
+  desktop.addEventListener('click', function() {
+    // Get the colors of the palette associated with the clicked button
+    const palette = this.closest('.paleta');
+    const colors = Array.from(palette.querySelectorAll('.cor')).map(cor => getComputedStyle(cor).backgroundColor);
+
+    // Set the colors in CSS variables
+    colors.forEach((color, index) => {
+      document.documentElement.style.setProperty(`--color-${index + 1}`, color);
+    });
+
+    // Set the modal background to the colors
+    const modal = document.querySelector('#modalDesktop .modal-content');
+    modal.style.background = `linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3))`;
+  });
+
+  desktop.setAttribute('data-bs-toggle', 'modal');
+  desktop.setAttribute('data-bs-target', '#modalDesktop');
+});
+
+
+
 
 toggleCursor();
 
