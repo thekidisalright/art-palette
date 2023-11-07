@@ -104,6 +104,8 @@
 .btn-modal{
     display: flex;
     align-items: center;
+    background: none;
+    border: 2px solid var(--color-3);
 }
 
 .modalCelular{

@@ -49,7 +49,7 @@ celulares.forEach(celular => {
 
     // Set the modal background to the colors
     const modal = document.querySelector('#modalCelular .modal-content');
-    modal.style.background = `linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3))`;
+    modal.style.background = `var(--color-1)`;
   });
 
   celular.setAttribute('data-bs-toggle', 'modal');
