@@ -1,4 +1,4 @@
-# ArtPalette
+# ArtPalette :art:
 **ArtPalette** é um projeto educacional sem fins-lucrativos, desenvolvido para o curso Novotec Expresso de Design de Sites e Apps.
 
 ### Acesse aqui :point_right: [thekidisalright.github.io/art-palette](https://thekidisalright.github.io/art-palette/)
