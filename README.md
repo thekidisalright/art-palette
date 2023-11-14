@@ -8,6 +8,7 @@ No ArtPalette, você pode encontrar paletas de três cores para utilizar no seu 
 O site foi desenvolvido durante aulas ministradas pela professora Letícia, que orientou os alunos e auxiliou na idealização do projeto.
 
 **desenvolvido por [Alexandre Silva](https://github.com/thekidisalright)** :man_technologist:
+
 *idealizado por Alexandre Silva, Ayme Moura, Cássia Schlosser e Kauã Silva*
 
 > Written with [StackEdit](https://stackedit.io/)
