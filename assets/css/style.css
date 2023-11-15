@@ -165,6 +165,7 @@ body{
 .no-wrap-scroll::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
 }
+<<<<<<< HEAD
 
 @media (max-width: 492px) {
     .img-equipe{
@@ -172,3 +173,5 @@ body{
         height: 150px !important;
     }
 }
+=======
+>>>>>>> d7cb549ef21e31fea8900d046c2be2582ff4c933
