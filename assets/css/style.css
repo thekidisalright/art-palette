@@ -150,6 +150,41 @@ body{
     fill: var(--color-3);
 }
 
+.icones-modal{
+    width: 33px;
+    height: 33px;
+}
+
+.icones-modal path{
+    fill: var(--color-3);
+}
+
+#curvas{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.conteudo-modal h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.conteudo-modal p{
+    font-size: 20px;
+    font-weight: 300;
+    text-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.conteudo-modal b{
+    font-weight: 300;
+    color: var(--color-3);
+}
+
 .nome-equipe{
     font-size: 2.5rem;
 }
@@ -165,7 +200,6 @@ body{
 .no-wrap-scroll::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
 }
-<<<<<<< HEAD
 
 @media (max-width: 492px) {
     .img-equipe{
@@ -173,5 +207,3 @@ body{
         height: 150px !important;
     }
 }
-=======
->>>>>>> d7cb549ef21e31fea8900d046c2be2582ff4c933
