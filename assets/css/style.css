@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--quicksand);
 }
 
 :root {
@@ -15,6 +14,10 @@
     --quicksand: 'Quicksand', sans-serif;
 }
 
+body{
+    font-family: var(--quicksand);
+
+}
 
 .navbar-pai{
     padding: 1.5rem 0 2.5rem 0;
@@ -105,11 +108,46 @@
     display: flex;
     align-items: center;
     background: none;
+    color: var(--color-1);
     border: 2px solid var(--color-3);
+}
+
+.btn-modal:hover{
+    background: var(--color-3);
+    color: var(--color-2);
 }
 
 .modalCelular{
     max-width: 412px;
+    color: var(--color-1);
+    border-radius: 40px;
+    font-family: 'Lexend', sans-serif !important;
+    background-color: var(--color-2);
+}
+
+.titulo-modal{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.titulo-modal b{
+    font-weight: 700;
+    color: var(--color-3);
+}
+
+.texto-modal{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-1);
+}
+
+.texto-modal b{
+    font-weight: 300;
+    color: var(--color-3);
+}
+
+#gato path{
+    fill: var(--color-3);
 }
 
 .nome-equipe{
@@ -126,4 +164,11 @@
 
 .no-wrap-scroll::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
+}
+
+@media (max-width: 492px) {
+    .img-equipe{
+        width: 150px !important;
+        height: 150px !important;
+    }
 }

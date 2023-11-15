@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 
 
 </head>
@@ -50,6 +51,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./quem-somos.html">Quem somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./assets/ArtPalette.apk">Baixe nosso app</a>
                             </li>
                             <li class="nav-item">
                                 <button class="btn btn-link nav-link" id="themeButton"></button>
@@ -218,26 +222,38 @@
     <div class="modal fade" id="modalCelular" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content modalCelular">
-            <div class="row justify-content-end">
+            <div class="row justify-content-end p-3">
                 <div class="col-auto d-flex align-items-center">
-                    <button type="button" class="btn btn-modal">Menu <span class="material-symbols-outlined">
-                        expand_more
-                        </span></button>
-                    <button type="button" class="btn btn-modal"><span class="material-symbols-outlined">
-                        light_mode
-                        </span></button>
-
+                    <button type="button" class="btn btn-modal rounded-pill" data-bs-dismiss="modal">
+                        Fechar</button>
                 </div>
             </div>
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="row mt-3">
+                <div class="col-auto px-4">
+                    <svg id="gato" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45 9C25.1536 9 9 25.1536 9 45C9 64.8464 25.1536 81 45 81C64.8464 81 81 64.8464 81 45C81 25.1536 64.8464 9 45 9ZM45 15C61.6036 15 75 28.3964 75 45C75 61.6036 61.6036 75 45 75C28.3964 75 15 61.6036 15 45C15 28.3964 28.3964 15 45 15ZM29.209 27.1523C28.3209 26.9891 27.3794 27.4463 27.0352 28.3711C25.7152 31.9081 24 38.862 24 49.5C24 59.937 33.405 68.4023 45 68.4023C56.595 68.4023 66 59.937 66 49.5C66 38.862 64.2848 31.9081 62.9648 28.3711C62.5058 27.1381 60.9913 26.7293 59.9473 27.5273C56.5855 30.0944 53.4039 31.2761 52.0957 31.7285C49.8766 31.0103 47.4934 30.5977 45 30.5977C42.5066 30.5977 40.1234 31.0103 37.9043 31.7285C36.5961 31.2761 33.4145 30.0944 30.0527 27.5273C29.7917 27.3278 29.505 27.2068 29.209 27.1523ZM36 42C39.312 42 42 44.688 42 48C42 51.312 39.312 54 36 54C32.688 54 30 51.312 30 48C30 44.688 32.688 42 36 42ZM54 42C57.312 42 60 44.688 60 48C60 51.312 57.312 54 54 54C50.688 54 48 51.312 48 48C48 44.688 50.688 42 54 42ZM45 57C46.656 57 48 58.344 48 60H42C42 58.344 43.344 57 45 57Z" fill="#0000FF"/>
+                    </svg>
+                </div>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="row mt-3">
+                <div class="col px-5">
+                    <h2 class="text-wrap titulo-modal">Os gatos estão <b>dominando</b> o mundo, veja como.</p>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+            <div class="row mt-3">
+                <div class="col px-5">
+                    <p class="text-wrap texto-modal">
+                        Você achou que isso era somente um <b>template de website</b> onde você poderia observar a aplicação de uma paleta de cores triádica? Errou feio, isso é um <b>alerta</b> sobre como os gatos estão tomando conta do nosso planeta!
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 justify-content-evenly">
+                <div class="col-auto">
+                    <svg id="pata" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2379 4.12768C12.0938 4.11946 11.9502 4.1291 11.8055 4.15454C10.2793 4.40616 9.36891 6.35574 9.68929 8.68774C9.87629 10.0449 10.4655 11.2349 11.2657 11.8674C11.6906 12.2016 12.1543 12.375 12.6246 12.375C12.7305 12.375 12.8369 12.366 12.9442 12.3481C14.4704 12.0965 15.3808 10.1469 15.0604 7.81494C14.8734 6.45781 14.2869 5.26775 13.4867 4.63525C13.0958 4.32691 12.6701 4.15237 12.2379 4.12768ZM20.7591 4.13037C20.326 4.15622 19.9028 4.32422 19.513 4.63257C18.7128 5.26507 18.1249 6.45375 17.9393 7.81225C17.6203 10.1456 18.5279 12.0965 20.0528 12.3481C20.1601 12.3646 20.2678 12.375 20.3751 12.375C20.8467 12.375 21.3118 12.2016 21.7367 11.8674C22.5369 11.2349 23.1248 10.0462 23.3104 8.68774C23.6294 6.35437 22.7204 4.40348 21.1942 4.15185C21.0484 4.12848 20.9035 4.12175 20.7591 4.13037ZM6.39144 11C6.21446 11.0078 6.03918 11.0377 5.86507 11.0913C5.2587 11.2811 4.75504 11.7382 4.44979 12.3804C4.05516 13.2122 4.01774 14.2752 4.34774 15.2969C4.84961 16.8534 6.05162 17.875 7.25887 17.875C7.46924 17.875 7.67835 17.8443 7.8846 17.781C8.49098 17.5913 8.99463 17.1341 9.29988 16.4919C9.69451 15.6601 9.73194 14.5971 9.40194 13.5754C8.88579 11.9777 7.63028 10.9455 6.39144 11ZM26.6055 11C25.3647 10.9462 24.1139 11.9765 23.5977 13.5754C23.2677 14.5957 23.3038 15.6601 23.6998 16.4919C24.005 17.1341 24.5087 17.5913 25.1151 17.781C25.3213 17.8443 25.5318 17.875 25.7408 17.875C26.9481 17.875 28.1487 16.8521 28.6519 15.2942C28.9819 14.2739 28.9459 13.2122 28.5499 12.3804C28.2446 11.7382 27.741 11.2811 27.1346 11.0913C26.96 11.0379 26.7828 11.0077 26.6055 11ZM16.4998 13.75C14.898 13.75 13.4205 15.231 12.4608 17.6387C11.7416 19.4399 10.3173 20.8342 8.61507 21.7637C7.08745 22.5969 6.87484 23.5362 6.87484 24.2773C6.87484 27.2528 11.7327 28.8723 16.4998 28.8723C21.267 28.8723 26.1248 27.2528 26.1248 24.2773C26.1248 23.5362 25.9122 22.5956 24.3846 21.761C22.681 20.8329 21.258 19.4399 20.5389 17.6387C19.5791 15.2324 18.1017 13.75 16.4998 13.75Z" fill="#0000FF"/>
+                    </svg>
+                </div>
+                
             </div>
           </div>
         </div>
