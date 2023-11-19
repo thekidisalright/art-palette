@@ -125,6 +125,24 @@ body{
     background-color: var(--color-2);
 }
 
+.modalDesktop{
+    width: 1440px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    color: var(--color-1);
+    border-radius: 40px;
+    font-family: 'Lexend', sans-serif !important;
+    background-color: var(--color-2);
+}
+
+.modalDesktop::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
 .titulo-modal{
     font-size: 32px;
     font-weight: 700;

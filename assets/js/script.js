@@ -72,7 +72,6 @@ desktops.forEach(desktop => {
 
     // Set the modal background to the colors
     const modal = document.querySelector('#modalDesktop .modal-content');
-    modal.style.background = `linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3))`;
   });
 
   desktop.setAttribute('data-bs-toggle', 'modal');
