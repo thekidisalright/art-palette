@@ -15,16 +15,23 @@
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
     position: fixed;
-    left: 0;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    width: 90%; /* ou a largura que você deseja */
+    margin: 0 auto; /* isso irá centralizar o rodapé */
+    border-radius: 50px; /* adicionar bordas arredondadas */
+    /* outras propriedades de estilo */
+}
+
+footer .container {
+    text-align: center; /* isso irá centralizar o texto dentro do rodapé */
+    padding: 1rem; /* espaço em torno do texto */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* isso irá remover a margem padrão do parágrafo */
 }
 
 body{
