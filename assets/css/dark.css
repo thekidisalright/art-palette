@@ -7,6 +7,11 @@
     color: var(--preto);
 }
 
+footer {
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+}
+
 body{
     background-color: var(--cinza);
     color: var(--cinza-claro);

@@ -7,6 +7,11 @@
     color: var(--branco);
 }
 
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
 body{
     background-color: var(--branco);
     color: var(--preto);
